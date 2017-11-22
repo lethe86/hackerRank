@@ -21,3 +21,19 @@ function main() {
     
     console.log("" + word.length * tallestChar);
 }
+
+/* Other solution using charCodeAt API */
+/*
+function returnMaxHeight(alphabetArr, word) {
+    let currentMax = 0;
+    
+    for (let i = 0; i < word.length; i++) {
+        let cur = alphabetArr[word.charCodeAt(i) - 97];
+        if (cur > currentMax) {
+            currentMax = cur;
+        }
+    }
+    
+    return currentMax;
+}
+*/
